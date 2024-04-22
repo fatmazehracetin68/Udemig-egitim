@@ -1,0 +1,63 @@
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
+
+    label {
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: var(--main-color);
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: var(--text-color);
+      font-size: 15px;
+      font-weight: bold;
+      transition: background-color 300ms;
+
+      &:hover {
+        background-color: #a48032;
+        color: #000;
+      }
+    }
+  }
+}
+
+//Media etiketleri
+@media (min-width: 768px) {
+  .contact-us {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .contact-us img,
+  .contact-us form {
+    width: 48%;
+    margin-right: 2rem;
+  }
+  .contact-us img {
+    margin-right: 2rem;
+  }
+}
